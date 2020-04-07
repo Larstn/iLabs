@@ -1,5 +1,5 @@
 def createStateFile(ExperimentName, Ncontrols, Nbooleans, Nindicators, NoiseProfiles = []):
-"""creates the file to store the state data, Input: ExperimentName, NControls, NBooleans, Nindicators, [NoiseProfiles]"
+	"""creates the file to store the state data, Input: ExperimentName, NControls, NBooleans, Nindicators, [NoiseProfiles]"
 	Experiment Name: Name of your experiment
 	NControls: Number of numeric controls in the experiment
 	NBooleans: Number of boolean controls in the experiment 
