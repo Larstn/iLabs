@@ -24,11 +24,11 @@ _Throughout this guide, we will use the Diffraction Experiment as an example. Th
 
 _The diffraction experiment has the following controls:_
 
-_- Light (On/Off)_
-_- Red Laser (On/Off)_
-_- Green Laser (On/Off)_
-_- Grating (5 different gratings are available)_
-_- Position of the photodetector (about 283 positions)_
+- _Light (On/Off)_
+- _Red Laser (On/Off)_
+- _Green Laser (On/Off)_
+- _Grating (5 different gratings are available)_
+- _Position of the photodetector (about 283 positions)_
 
 _Each unique combination of possible control values is a state of the diffraction experiment. Thus, the experiment has: 2 [Light] * 2 [Red Laser] * 2 [Green Laser] * 5 [Grating] * 283 [Photodetector] = 11,320 states. Even though this might sound like a lot of states, the recording of the diffraction experiment takes less than 2 hours and it can easily be uploaded to the vLabs platform._
 
