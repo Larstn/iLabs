@@ -24,11 +24,11 @@ _Throughout this guide, we will use the Diffraction Experiment as an example. Th
 
 _The diffraction experiment has the following controls:_
 
-_-Light (On/Off)_
-_-Red Laser (On/Off)_
-_-Green Laser (On/Off)_
-_-Grating (5 different gratings are available)_
-_-Position of the photodetector (about 283 positions)_
+_- Light (On/Off)_
+_- Red Laser (On/Off)_
+_- Green Laser (On/Off)_
+_- Grating (5 different gratings are available)_
+_- Position of the photodetector (about 283 positions)_
 
 _Each unique combination of possible control values is a state of the diffraction experiment. Thus, the experiment has: 2 [Light] * 2 [Red Laser] * 2 [Green Laser] * 5 [Grating] * 283 [Photodetector] = 11,320 states. Even though this might sound like a lot of states, the recording of the diffraction experiment takes less than 2 hours and it can easily be uploaded to the vLabs platform._
 
@@ -45,9 +45,9 @@ The example uses [CreateStateFile.py](CreateStateFile.py) and [writeStateFile.py
 ### Taking pictures with computer-controlled cameras
 For an automated recording, you also need to control a camera with your computer. If you use a PiCamera, you can use the code we are providing on this github in python (see: [TakePicturePICam.py](TakePicturePICam.py)). You can see that the code to control the camera is relatively short. Controlling cameras with your computer is generally easy and there are many pre-build libraries that can help you with this. Please find some of them below: 
 
--https://picamera.readthedocs.io/en/release-1.13/
--http://simplecv.org
--https://opencv.org
+- https://picamera.readthedocs.io/en/release-1.13/
+- http://simplecv.org
+- https://opencv.org
 
 ### The data format 
 If you need or want to write your own function to record the meta data of your experiment, you need to follow the correct data format. The format is as follows: 
