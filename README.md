@@ -69,7 +69,7 @@ number of controls:{N_controls for your experiment},number of booleans:{N_boolen
 
 {Value of Control 1}, {Value of Control 2}, .. {Value of Control N}, {String to describe value of boolean controls, e.g. 00010}, {Value of Indicator 1}, {Value of Indicator 2}, .. {Value of Indicator N}, {ImageName 1}, {Image Name 2}, ... , {Image Name N}
 
-In this notation, please replace the parts in {} with the values in your experiment. You can find some example data files for the diffraction experiment on this repository (see: [Diffraction Recording.txt](Diffraction\ Recording.txt) and [Diffraction Recording with Noise.txt](Diffraction\ Recording\ with\ Noise.txt)) 
+In this notation, please replace the parts in {} with the values in your experiment. You can find some example data files for the diffraction experiment on this repository (see: [Diffraction Recording.txt](Diffraction%20Recording.txt) and [Diffraction Recording with Noise.txt](Diffraction%20Recording%20with%20Noise.txt)) 
 
 ### Manual Recordings
 Under some limited circumstances, it might be helpful to manually record your experiment. This will only be feasible, if your experiment has a very limited number of states. Yet, in this case, you do not need to make your experiment computer-controlled. If you want to do a manual recording, please use the data format provided above, take and associate pictures with your states and ensure that you provide data for all possible states. 
