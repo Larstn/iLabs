@@ -99,17 +99,17 @@ cnt = 0
 
 #create nested for loops for all controls 
 for g in np.nditer(GratingValues):
+  SetGrating(g)
   for p in np.nditer(PhotodetectorValues):
+    SetPhotodetector(p)
     for l in (0,1):
+      SetLight(l)
       for r in (0,1):
+        SetRedLaser(r)
         for gr in (0,1):
+          SetGreenLaser(g)
           #in the innermost for loop, set the equipment into the state 
           cnt = cnt + 1
-          SetGrating(g)
-          SetPhotodetector(p)
-          SetLight(l)
-          SetRedLaser(r)
-          SetGreenLaser(g)
 
           # Collect Data and Image
           Detector = ReturnPhotodetector()
