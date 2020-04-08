@@ -52,10 +52,12 @@ For an automated recording, you also need to control a camera with your computer
 ### The data format 
 If you need or want to write your own function to record the meta data of your experiment, you need to follow the correct data format. The format is as follows: 
 
-[Header]: 
+[Header]:
+
 number of controls:N_c,number of booleans:N_b,number of indicators:N_i, noise: gpn
 
 [One Line per state, showing:]
+
 Control Variable 1, Control Variable 2, .. Control Variable N, Boolean Control String(1,..N), Indicator Value 1(:Std {if Gaussian}), Indicator Value 2, … Indicator Value N, ImageName 1, Image Name 2, ... , Image Name N
 
 You can find some example data files for the diffraction experiment on this repository (see: Diffraction Recording.txt and Diffraction Recording with Noise.txt) 
