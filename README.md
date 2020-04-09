@@ -1,4 +1,4 @@
-# Recording an experiment for vLabs
+# Recording an experiment for iLabs
 ## Step by Step Guide 
 
 _Thank you for considering turning one of your laboratory experiments into an online._
@@ -19,7 +19,7 @@ Recording your experiment requires you to think about your experiment as a set o
 
 For our purposes, we defined two distinct types of control variables: Buttons (A control that can only take two values, often On/Off) and Slides (A control that can have a high number of values, anything more than 2). Each individual combination of values that control variables can take is a state of your experiment. 
 
-To turn your experiment into an online experiment, please think about the states of your experiment. It is easier to digitize an experiment with fewer control variables. Try to think about the least number of control variables you would need to convey the point of the experiment and make the best use of the interactive features of the vLabs platform. Sometimes, you can break up an experiment into multiple experiments to reduce the complexity. If you have figured out the control variables for your experiment, you have already done a big part of the required work. 
+To turn your experiment into an online experiment, please think about the states of your experiment. It is easier to digitize an experiment with fewer control variables. Try to think about the least number of control variables you would need to convey the point of the experiment and make the best use of the interactive features of the iLabs platform. Sometimes, you can break up an experiment into multiple experiments to reduce the complexity. If you have figured out the control variables for your experiment, you have already done a big part of the required work. 
 
 #### Example: Diffraction Experiment 
 _Throughout this guide, we will use the Diffraction Experiment as an example. The recording of the Diffraction experiment can be found [online](http://ilabs.education/showExperiment?exp_id=5187247892594688)_
@@ -32,11 +32,11 @@ _The diffraction experiment has the following controls:_
 - _Grating (5 different gratings are available)_
 - _Position of the photodetector (about 283 positions)_
 
-_Each unique combination of possible control values is a state of the diffraction experiment. Thus, the experiment has: 2 [Light] * 2 [Red Laser] * 2 [Green Laser] * 5 [Grating] * 283 [Photodetector] = 11,320 states. Even though this might sound like a lot of states, the recording of the diffraction experiment takes less than 2 hours and it can easily be uploaded to the vLabs platform._
+_Each unique combination of possible control values is a state of the diffraction experiment. Thus, the experiment has: 2 [Light] * 2 [Red Laser] * 2 [Green Laser] * 5 [Grating] * 283 [Photodetector] = 11,320 states. Even though this might sound like a lot of states, the recording of the diffraction experiment takes less than 2 hours and it can easily be uploaded to the iLabs platform._
 
 
 ## Digitalizing your experiment
-To turn your experiment into a dataset that can be uploaded to the vLabs platform, you need to record it in all possible states. For this, you need software to walk through all the possible combinations of the control variables and, once your experiment reached the state, record all data points (here called indicator data) associated with this state and take pictures with your camera. If your experiment is already computer controlled and you thought about the possible values for each control, this is straight forward. 
+To turn your experiment into a dataset that can be uploaded to the iLabs platform, you need to record it in all possible states. For this, you need software to walk through all the possible combinations of the control variables and, once your experiment reached the state, record all data points (here called indicator data) associated with this state and take pictures with your camera. If your experiment is already computer controlled and you thought about the possible values for each control, this is straight forward. 
 
 ### Recording the states
 The code that allows your experiment to reach all possible states can be relatively simple. You can to either make adjustments to the code that currently runs your experiment or write a short new code piece importing the existing code that runs the experiment. Given functions to control your equipment, you need to write nested for-loops to run through the possible values of each control. You should use one for-loop for each control. In each for-loop, change the control value of one piece of equipment. For setting the control values, use the functions to control your hardware, e.g. over your RasberryPi.
@@ -74,8 +74,8 @@ In this notation, please replace the parts in {} with the values in your experim
 ### Manual Recordings
 Under some limited circumstances, it might be helpful to manually record your experiment. This will only be feasible, if your experiment has a very limited number of states. Yet, in this case, you do not need to make your experiment computer-controlled. If you want to do a manual recording, please use the data format provided above, take and associate pictures with your states and ensure that you provide data for all possible states. 
 
-## Uploading the experiment to the vLabs Platform
+## Uploading the experiment to the iLabs Platform
 Once you recorded your experiment and the pictures and state file is ready, the upload is very straightforward. You only need to go on www.ilabs.education and log in using either your email address or any other service like Google. Please contact us at larstn@stanford.edu and tell us the email address that you are using, so we can add you to the list of people that are allowed to upload experiments (we are currently restricting access to the upload feature). Once we added you, you can click on “Create” and then follow some easy steps to upload your experiment. The menu is straight forward. There are two different instances that you can create: a laboratory and an experiment. An experiment is a sub-class of a laboratory. Think about the laboratory as some general container for a number of experiments, e.g. different diffraction experiments. They help you better sort your work. If you have any questions about the upload process, please feel free to reach out. 
 
-## Participating in the vLabs development
-We would like to make the vLabs project as openly available as possible. There are two ways for anyone to contribute. You can help by uploading the functions that you used to record your experiments onto this repository, so other people can use them as inspiration. Another way to contribute is to help with the development of the platform. The repository for the platform is currently not public, since it includes several authentication keys that we are using to run it. However, we are always happy if anyone wants to join our team and bring some of their ideas for the platform to life. Contact us at larstn@stanford.edu, if you are interested and we share the repository with you! 
+## Participating in the iLabs development
+We would like to make the iLabs project as openly available as possible. There are two ways for anyone to contribute. You can help by uploading the functions that you used to record your experiments onto this repository, so other people can use them as inspiration. Another way to contribute is to help with the development of the platform. The repository for the platform is currently not public, since it includes several authentication keys that we are using to run it. However, we are always happy if anyone wants to join our team and bring some of their ideas for the platform to life. Contact us at larstn@stanford.edu, if you are interested and we share the repository with you! 
